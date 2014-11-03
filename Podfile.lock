@@ -1,0 +1,77 @@
+PODS:
+  - AFNetworking (2.4.1):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+    - AFNetworking/UIKit
+  - AFNetworking/NSURLConnection (2.4.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.4.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.4.1)
+  - AFNetworking/Security (2.4.1)
+  - AFNetworking/Serialization (2.4.1)
+  - AFNetworking/UIKit (2.4.1):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - DACircularProgress (2.2.0)
+  - EaseMobSDK (2.0.8)
+  - MBProgressHUD (0.9)
+  - MWPhotoBrowser (1.4.1):
+    - DACircularProgress
+    - MBProgressHUD (~> 0.8)
+    - PSTCollectionView (~> 1.2)
+    - SDWebImage (~> 3.7)
+  - PSTCollectionView (1.2.3)
+  - SDWebImage (3.7.1):
+    - SDWebImage/Core
+  - SDWebImage/Core (3.7.1)
+  - UMeng (2.2.1)
+  - UMeng-Analytics (2.2.0)
+  - UMengAnalytics (3.1.8)
+  - UMengAnalyticsExt (1.0.0):
+    - UMengAnalytics
+  - UMengAppNetwork (3.5.6)
+  - UMengFeedback (1.4.2.1)
+  - UMengMessage (1.1.0.1)
+  - UMengSocial (4.2)
+
+DEPENDENCIES:
+  - AFNetworking (~> 2.0)
+  - EaseMobSDK (= 2.0.8)
+  - MBProgressHUD (~> 0.9)
+  - MWPhotoBrowser
+  - SDWebImage (~> 3.6)
+  - UMeng (~> 2.2.1)
+  - UMeng-Analytics (~> 2.2.0)
+  - UMengAnalytics (~> 3.1.8)
+  - UMengAnalyticsExt (~> 1.0.0)
+  - UMengAppNetwork (~> 3.5.6)
+  - UMengFeedback (~> 1.4.2.1)
+  - UMengMessage (~> 1.1.0.1)
+  - UMengSocial (~> 4.2)
+
+SPEC CHECKSUMS:
+  AFNetworking: 0aabc6fae66d6e5d039eeb21c315843c7aae51ab
+  DACircularProgress: 3b41941891a56dc6aa17971f5322a9a38a6f446e
+  EaseMobSDK: 758ed327d683a14c13ea09305617ca853c4fdd74
+  MBProgressHUD: 2038dbcf3dce73215abed6001657043d53aa79a8
+  MWPhotoBrowser: be05b3b7521e961382a4ba5579685bf5a00b93d8
+  PSTCollectionView: d9f466e4554cc83260ca9bde7beb27f308e8fd76
+  SDWebImage: 116e88633b5b416ea0ca4b334a4ac59cf72dd38d
+  UMeng: e5b6c6a06215aeba33cb59159341ab3d6d292935
+  UMeng-Analytics: cb5584951d06e8b32d394d2146ad98540e5723a7
+  UMengAnalytics: c263b4e0f27e91551b7e79eacdf812f1bae0e256
+  UMengAnalyticsExt: 0b2c299026d81d93a08659a4b58b397ae9ac1e82
+  UMengAppNetwork: 45f9c4da81e5a8f0c40b44930cd046d161fbb6c7
+  UMengFeedback: a57656e8441ea05cf6c812927eb4d3cdb21a25ef
+  UMengMessage: 95122d5ef6106594f26e40a2c81a1586cf8d1706
+  UMengSocial: f0e415111d9eb96fa9a74adf442508031426b2b0
+
+COCOAPODS: 0.34.4
