@@ -68,6 +68,18 @@
 		187787381A04D1EC00FE1502 /* MMLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 187787351A04D1EC00FE1502 /* MMLocationManager.m */; };
 		1877873B1A04D27D00FE1502 /* NSDictionary+MM.m in Sources */ = {isa = PBXBuildFile; fileRef = 1877873A1A04D27D00FE1502 /* NSDictionary+MM.m */; };
 		187787401A04D42200FE1502 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1877873F1A04D42200FE1502 /* MapKit.framework */; };
+		189D2B521A08B138002D146F /* ExternNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 189D2B4D1A08B138002D146F /* ExternNavigationController.m */; };
+		189D2B531A08B138002D146F /* ExternStoryboardSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 189D2B4F1A08B138002D146F /* ExternStoryboardSegue.m */; };
+		189D2B541A08B138002D146F /* ExternViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 189D2B511A08B138002D146F /* ExternViewController.m */; };
+		189D2B571A08B69D002D146F /* HistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 189D2B561A08B69D002D146F /* HistoryViewController.m */; };
+		189D2B591A08BC1E002D146F /* History.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 189D2B581A08BC1E002D146F /* History.storyboard */; };
+		189D2B5B1A08BC28002D146F /* Contact.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 189D2B5A1A08BC28002D146F /* Contact.storyboard */; };
+		189D2B5E1A08BD4D002D146F /* ContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 189D2B5D1A08BD4D002D146F /* ContactViewController.m */; };
+		189D2B671A08C967002D146F /* Pickup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 189D2B661A08C967002D146F /* Pickup.storyboard */; };
+		189D2B691A08C98C002D146F /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 189D2B681A08C98C002D146F /* Setting.storyboard */; };
+		189D2B6C1A08CAC5002D146F /* PickupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 189D2B6B1A08CAC5002D146F /* PickupViewController.m */; };
+		189D2B6F1A08CAD3002D146F /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 189D2B6E1A08CAD3002D146F /* SettingViewController.m */; };
+		189D2B731A08D26C002D146F /* HistoryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 189D2B721A08D26C002D146F /* HistoryTableViewCell.m */; };
 		A121A6DCBF8B5BE914083C96 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 74DBC4E0774744EC1C684A95 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -205,6 +217,26 @@
 		187787391A04D27D00FE1502 /* NSDictionary+MM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+MM.h"; sourceTree = "<group>"; };
 		1877873A1A04D27D00FE1502 /* NSDictionary+MM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+MM.m"; sourceTree = "<group>"; };
 		1877873F1A04D42200FE1502 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		189D2B4C1A08B138002D146F /* ExternNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExternNavigationController.h; sourceTree = "<group>"; };
+		189D2B4D1A08B138002D146F /* ExternNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExternNavigationController.m; sourceTree = "<group>"; };
+		189D2B4E1A08B138002D146F /* ExternStoryboardSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExternStoryboardSegue.h; sourceTree = "<group>"; };
+		189D2B4F1A08B138002D146F /* ExternStoryboardSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExternStoryboardSegue.m; sourceTree = "<group>"; };
+		189D2B501A08B138002D146F /* ExternViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExternViewController.h; sourceTree = "<group>"; };
+		189D2B511A08B138002D146F /* ExternViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExternViewController.m; sourceTree = "<group>"; };
+		189D2B551A08B69D002D146F /* HistoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryViewController.h; sourceTree = "<group>"; };
+		189D2B561A08B69D002D146F /* HistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryViewController.m; sourceTree = "<group>"; };
+		189D2B581A08BC1E002D146F /* History.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = History.storyboard; sourceTree = "<group>"; };
+		189D2B5A1A08BC28002D146F /* Contact.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Contact.storyboard; sourceTree = "<group>"; };
+		189D2B5C1A08BD4D002D146F /* ContactViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactViewController.h; sourceTree = "<group>"; };
+		189D2B5D1A08BD4D002D146F /* ContactViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactViewController.m; sourceTree = "<group>"; };
+		189D2B661A08C967002D146F /* Pickup.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Pickup.storyboard; sourceTree = "<group>"; };
+		189D2B681A08C98C002D146F /* Setting.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Setting.storyboard; sourceTree = "<group>"; };
+		189D2B6A1A08CAC5002D146F /* PickupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickupViewController.h; sourceTree = "<group>"; };
+		189D2B6B1A08CAC5002D146F /* PickupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickupViewController.m; sourceTree = "<group>"; };
+		189D2B6D1A08CAD3002D146F /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
+		189D2B6E1A08CAD3002D146F /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
+		189D2B711A08D26C002D146F /* HistoryTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryTableViewCell.h; sourceTree = "<group>"; };
+		189D2B721A08D26C002D146F /* HistoryTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryTableViewCell.m; sourceTree = "<group>"; };
 		247B8FD1EC1B66D5E81F496A /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		74DBC4E0774744EC1C684A95 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		AABB98AB79227B78063B727E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -297,6 +329,7 @@
 		187786821A04B12100FE1502 /* 3rdparty */ = {
 			isa = PBXGroup;
 			children = (
+				189D2B4B1A08B138002D146F /* StoryBoardExtern */,
 				1877872E1A04D1EC00FE1502 /* Emoji */,
 				187787331A04D1EC00FE1502 /* manager */,
 				187786B01A04B68B00FE1502 /* TTGlobalUICommon */,
@@ -334,9 +367,18 @@
 		187786841A04B12100FE1502 /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				189D2B701A08CC3B002D146F /* Cell */,
 				187786C71A04B72B00FE1502 /* Core Data */,
 				187786851A04B12100FE1502 /* ViewController.h */,
 				187786861A04B12100FE1502 /* ViewController.m */,
+				189D2B551A08B69D002D146F /* HistoryViewController.h */,
+				189D2B561A08B69D002D146F /* HistoryViewController.m */,
+				189D2B5C1A08BD4D002D146F /* ContactViewController.h */,
+				189D2B5D1A08BD4D002D146F /* ContactViewController.m */,
+				189D2B6A1A08CAC5002D146F /* PickupViewController.h */,
+				189D2B6B1A08CAC5002D146F /* PickupViewController.m */,
+				189D2B6D1A08CAD3002D146F /* SettingViewController.h */,
+				189D2B6E1A08CAD3002D146F /* SettingViewController.m */,
 			);
 			path = Class;
 			sourceTree = "<group>";
@@ -389,6 +431,10 @@
 				187786A71A04B16E00FE1502 /* LaunchScreen.xib */,
 				187786A81A04B16E00FE1502 /* Login.storyboard */,
 				187460641A07834300D7FD89 /* Main.storyboard */,
+				189D2B581A08BC1E002D146F /* History.storyboard */,
+				189D2B5A1A08BC28002D146F /* Contact.storyboard */,
+				189D2B661A08C967002D146F /* Pickup.storyboard */,
+				189D2B681A08C98C002D146F /* Setting.storyboard */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -544,6 +590,28 @@
 			path = manager;
 			sourceTree = "<group>";
 		};
+		189D2B4B1A08B138002D146F /* StoryBoardExtern */ = {
+			isa = PBXGroup;
+			children = (
+				189D2B4C1A08B138002D146F /* ExternNavigationController.h */,
+				189D2B4D1A08B138002D146F /* ExternNavigationController.m */,
+				189D2B4E1A08B138002D146F /* ExternStoryboardSegue.h */,
+				189D2B4F1A08B138002D146F /* ExternStoryboardSegue.m */,
+				189D2B501A08B138002D146F /* ExternViewController.h */,
+				189D2B511A08B138002D146F /* ExternViewController.m */,
+			);
+			path = StoryBoardExtern;
+			sourceTree = "<group>";
+		};
+		189D2B701A08CC3B002D146F /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				189D2B711A08D26C002D146F /* HistoryTableViewCell.h */,
+				189D2B721A08D26C002D146F /* HistoryTableViewCell.m */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		ABA7443A6C894F494C84A8E0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -645,9 +713,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				187786AA1A04B16E00FE1502 /* Login.storyboard in Resources */,
+				189D2B671A08C967002D146F /* Pickup.storyboard in Resources */,
+				189D2B5B1A08BC28002D146F /* Contact.storyboard in Resources */,
 				187786A91A04B16E00FE1502 /* LaunchScreen.xib in Resources */,
 				1858B07A1A048E4100393590 /* Images.xcassets in Resources */,
+				189D2B591A08BC1E002D146F /* History.storyboard in Resources */,
 				187460651A07834300D7FD89 /* Main.storyboard in Resources */,
+				189D2B691A08C98C002D146F /* Setting.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -698,7 +770,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				189D2B6C1A08CAC5002D146F /* PickupViewController.m in Sources */,
 				1877869D1A04B12200FE1502 /* BaseTableViewCell.m in Sources */,
+				189D2B521A08B138002D146F /* ExternNavigationController.m in Sources */,
 				187786C21A04B6CE00FE1502 /* NSDateFormatter+Category.m in Sources */,
 				187787371A04D1EC00FE1502 /* EmojiEmoticons.m in Sources */,
 				187786A11A04B12200FE1502 /* BaseViewController.m in Sources */,
@@ -707,9 +781,11 @@
 				187786C11A04B6CE00FE1502 /* NSDate+Category.m in Sources */,
 				1877871A1A04B72B00FE1502 /* NSManagedObjectModel+MagicalRecord.m in Sources */,
 				187787091A04B72B00FE1502 /* ApplyEntity.m in Sources */,
+				189D2B731A08D26C002D146F /* HistoryTableViewCell.m in Sources */,
 				187787271A04CC1400FE1502 /* NSDictionary+Json.m in Sources */,
 				187787101A04B72B00FE1502 /* NSString+MagicalDataImport.m in Sources */,
 				1877870A1A04B72B00FE1502 /* MagicalImportFunctions.m in Sources */,
+				189D2B531A08B138002D146F /* ExternStoryboardSegue.m in Sources */,
 				187787131A04B72B00FE1502 /* NSManagedObject+MagicalFinders.m in Sources */,
 				187787181A04B72B00FE1502 /* NSManagedObjectContext+MagicalSaves.m in Sources */,
 				187786A41A04B12200FE1502 /* EMSearchDisplayController.m in Sources */,
@@ -721,6 +797,8 @@
 				187787111A04B72B00FE1502 /* NSManagedObject+MagicalAggregation.m in Sources */,
 				187786AE1A04B3C700FE1502 /* BaseTextField.m in Sources */,
 				187787151A04B72B00FE1502 /* NSManagedObject+MagicalRequests.m in Sources */,
+				189D2B5E1A08BD4D002D146F /* ContactViewController.m in Sources */,
+				189D2B571A08B69D002D146F /* HistoryViewController.m in Sources */,
 				1877872D1A04CEFD00FE1502 /* NSString+MD5.m in Sources */,
 				1877869C1A04B12200FE1502 /* ViewController.m in Sources */,
 				187786C61A04B6CE00FE1502 /* UIViewController+HUD.m in Sources */,
@@ -728,6 +806,7 @@
 				1877870F1A04B72B00FE1502 /* NSRelationshipDescription+MagicalDataImport.m in Sources */,
 				187787361A04D1EC00FE1502 /* Emoji.m in Sources */,
 				1877870E1A04B72B00FE1502 /* NSObject+MagicalDataImport.m in Sources */,
+				189D2B541A08B138002D146F /* ExternViewController.m in Sources */,
 				187787211A04B72B00FE1502 /* MagicalRecord+Setup.m in Sources */,
 				187787191A04B72B00FE1502 /* NSManagedObjectContext+MagicalThreading.m in Sources */,
 				1877873B1A04D27D00FE1502 /* NSDictionary+MM.m in Sources */,
@@ -737,6 +816,7 @@
 				187787241A04B72B00FE1502 /* UIDemo.xcdatamodeld in Sources */,
 				187786A21A04B12200FE1502 /* EMChooseViewController.m in Sources */,
 				187787141A04B72B00FE1502 /* NSManagedObject+MagicalRecord.m in Sources */,
+				189D2B6F1A08CAD3002D146F /* SettingViewController.m in Sources */,
 				1877871E1A04B72B00FE1502 /* MagicalRecord+ErrorHandling.m in Sources */,
 				1877869F1A04B12200FE1502 /* EMTextView.m in Sources */,
 				1877872A1A04CCE300FE1502 /* NSArray+Json.m in Sources */,
