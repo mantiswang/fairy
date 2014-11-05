@@ -64,6 +64,7 @@
     [dict setObject:@"" forKey:@"lat"];
     [dict setObject:@"" forKey:@"lng"];
     
+    
     [dict setObject:@"8a2597aa1d37d432a88a446d82b6561e" forKey:@"deviceToken"];
     [dict setObject:@"iOS" forKey:@"systemType"];
     
@@ -71,26 +72,92 @@
     NSLog(@"jsonParam %@", jsonParam);
     NSString *url = [NSString stringWithFormat:@"%@%@", HOST, API_AUTHPATH];
     
+    [self showHudInView:self.view hint:@"正在登录..."];
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
     manager.responseSerializer = [AFHTTPResponseSerializer serializer];
-    [manager POST:url parameters:@{@"msg":[NSString stringWithFormat:@"A01%@", jsonParam]} success:^(AFHTTPRequestOperation *operation, id responseObject) {
+    [manager POST:url parameters:@{@"msg":[NSString stringWithFormat:@"A02%@", jsonParam]} success:^(AFHTTPRequestOperation *operation, id responseObject) {
         if(responseObject)
         {
-            NSError *error;
             NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:responseObject
                                                                 options:NSJSONReadingMutableContainers
                                                                   error:nil];
             NSString *retCode = dic[@"ret"];
-            if(retCode.integerValue == 0)
+            NSDictionary *data = dic[@"data"];
+            if(retCode.integerValue == 0)//成功登录，登录im账号
             {
-                //成功登录
-                
+                [self loginIMWithUser:data[@"messageUser"] password:data[@"messagePwd"]];
+            }
+            else if (retCode.integerValue == 5)//注册成功，需要注册im账号
+            {
+                [self registerIMWithUser:data[@"messageUser"] password:data[@"messagePwd"]];
             }
         }
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"%@", error);
+        [self hideHud];
+        TTAlertNoTitle(error.description);
+
     }];
     
+}
+
+
+-(void)loginIMWithUser:(NSString*)user password:(NSString*)pwd
+{
+    [[EaseMob sharedInstance].chatManager asyncLoginWithUsername:user
+                                                        password:pwd
+                                                      completion:
+     ^(NSDictionary *loginInfo, EMError *error) {
+         [self hideHud];
+         if (loginInfo && !error) {
+             [[NSNotificationCenter defaultCenter] postNotificationName:KNOTIFICATION_LOGINCHANGE object:@YES];
+         }else {
+             switch (error.errorCode) {
+                 case EMErrorServerNotReachable:
+                     TTAlertNoTitle(@"连接服务器失败!");
+                     break;
+                 case EMErrorServerAuthenticationFailure:
+                     TTAlertNoTitle(@"用户名或密码错误");
+                     break;
+                 case EMErrorServerTimeout:
+                     TTAlertNoTitle(@"连接服务器超时!");
+                     break;
+                 default:
+                     TTAlertNoTitle(@"登录失败");
+                     break;
+             }
+         }
+     } onQueue:nil];
+}
+
+-(void)registerIMWithUser:(NSString*)user password:(NSString*)pwd
+{
+    [[EaseMob sharedInstance].chatManager asyncRegisterNewAccount:user
+                                                         password:pwd
+                                                   withCompletion:
+     ^(NSString *username, NSString *password, EMError *error) {
+         
+         
+         if (!error) {//登录
+             [self loginIMWithUser:username password:password];
+         }else{
+             [self hideHud];
+             switch (error.errorCode) {
+                 case EMErrorServerNotReachable:
+                     TTAlertNoTitle(@"连接服务器失败!");
+                     break;
+                 case EMErrorServerDuplicatedAccount:
+                     TTAlertNoTitle(@"您注册的用户已存在!");
+                     break;
+                 case EMErrorServerTimeout:
+                     TTAlertNoTitle(@"连接服务器超时!");
+                     break;
+                 default:
+                     TTAlertNoTitle(@"注册失败");
+                     break;
+             }
+         }
+     } onQueue:nil];
 }
 
 - (void)didReceiveMemoryWarning {

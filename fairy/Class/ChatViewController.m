@@ -1,47 +1,56 @@
 //
-//  HistoryViewController.m
+//  ChatViewController.m
 //  fairy
 //
 //  Created by apple on 14/11/4.
 //  Copyright (c) 2014年 onecat. All rights reserved.
 //
 
-#import "HistoryViewController.h"
+#import "ChatViewController.h"
+#import "ChatTableViewCell.h"
 
-@interface HistoryViewController ()<UITableViewDataSource, UITableViewDelegate>
-@property (weak, nonatomic) IBOutlet UITableView *historyTable;
+@interface ChatViewController ()<UITableViewDataSource, UITableViewDelegate>
+@property (weak, nonatomic) IBOutlet UITableView *chatTable;
 
 @end
 
-@implementation HistoryViewController
+@implementation ChatViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    _historyTable.backgroundColor = [UIColor blueColor];
 }
 
-
+#pragma mark -
+#pragma mark UITableViewDataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return 2;
 }
 
-// Row display. Implementers should *always* try to reuse cells by setting each cell's reuseIdentifier and querying for available reusable cells with dequeueReusableCellWithIdentifier:
-// Cell gets various attributes set automatically based on table (separators) and data source (accessory views, editing controls)
-
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"historyCell" forIndexPath:indexPath];
+    static NSString *historyCell = @"chatCell";
+    ChatTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:historyCell forIndexPath:indexPath];
+    cell.photoImageView.image = [UIImage imageNamed:@"touxiang"];
+    
     return cell;
 }
 
+
+#pragma mark -
+#pragma mark UITableViewDelegate
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 80.0f;
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
 
 
 

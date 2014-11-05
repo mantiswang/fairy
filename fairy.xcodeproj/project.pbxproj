@@ -71,15 +71,15 @@
 		189D2B521A08B138002D146F /* ExternNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 189D2B4D1A08B138002D146F /* ExternNavigationController.m */; };
 		189D2B531A08B138002D146F /* ExternStoryboardSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 189D2B4F1A08B138002D146F /* ExternStoryboardSegue.m */; };
 		189D2B541A08B138002D146F /* ExternViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 189D2B511A08B138002D146F /* ExternViewController.m */; };
-		189D2B571A08B69D002D146F /* HistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 189D2B561A08B69D002D146F /* HistoryViewController.m */; };
-		189D2B591A08BC1E002D146F /* History.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 189D2B581A08BC1E002D146F /* History.storyboard */; };
+		189D2B571A08B69D002D146F /* ChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 189D2B561A08B69D002D146F /* ChatViewController.m */; };
+		189D2B591A08BC1E002D146F /* Chat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 189D2B581A08BC1E002D146F /* Chat.storyboard */; };
 		189D2B5B1A08BC28002D146F /* Contact.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 189D2B5A1A08BC28002D146F /* Contact.storyboard */; };
 		189D2B5E1A08BD4D002D146F /* ContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 189D2B5D1A08BD4D002D146F /* ContactViewController.m */; };
 		189D2B671A08C967002D146F /* Pickup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 189D2B661A08C967002D146F /* Pickup.storyboard */; };
 		189D2B691A08C98C002D146F /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 189D2B681A08C98C002D146F /* Setting.storyboard */; };
 		189D2B6C1A08CAC5002D146F /* PickupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 189D2B6B1A08CAC5002D146F /* PickupViewController.m */; };
 		189D2B6F1A08CAD3002D146F /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 189D2B6E1A08CAD3002D146F /* SettingViewController.m */; };
-		189D2B731A08D26C002D146F /* HistoryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 189D2B721A08D26C002D146F /* HistoryTableViewCell.m */; };
+		189D2B731A08D26C002D146F /* ChatTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 189D2B721A08D26C002D146F /* ChatTableViewCell.m */; };
 		A121A6DCBF8B5BE914083C96 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 74DBC4E0774744EC1C684A95 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -223,9 +223,9 @@
 		189D2B4F1A08B138002D146F /* ExternStoryboardSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExternStoryboardSegue.m; sourceTree = "<group>"; };
 		189D2B501A08B138002D146F /* ExternViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExternViewController.h; sourceTree = "<group>"; };
 		189D2B511A08B138002D146F /* ExternViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExternViewController.m; sourceTree = "<group>"; };
-		189D2B551A08B69D002D146F /* HistoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryViewController.h; sourceTree = "<group>"; };
-		189D2B561A08B69D002D146F /* HistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryViewController.m; sourceTree = "<group>"; };
-		189D2B581A08BC1E002D146F /* History.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = History.storyboard; sourceTree = "<group>"; };
+		189D2B551A08B69D002D146F /* ChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatViewController.h; sourceTree = "<group>"; };
+		189D2B561A08B69D002D146F /* ChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatViewController.m; sourceTree = "<group>"; };
+		189D2B581A08BC1E002D146F /* Chat.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Chat.storyboard; sourceTree = "<group>"; };
 		189D2B5A1A08BC28002D146F /* Contact.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Contact.storyboard; sourceTree = "<group>"; };
 		189D2B5C1A08BD4D002D146F /* ContactViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactViewController.h; sourceTree = "<group>"; };
 		189D2B5D1A08BD4D002D146F /* ContactViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactViewController.m; sourceTree = "<group>"; };
@@ -235,8 +235,8 @@
 		189D2B6B1A08CAC5002D146F /* PickupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickupViewController.m; sourceTree = "<group>"; };
 		189D2B6D1A08CAD3002D146F /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
 		189D2B6E1A08CAD3002D146F /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
-		189D2B711A08D26C002D146F /* HistoryTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryTableViewCell.h; sourceTree = "<group>"; };
-		189D2B721A08D26C002D146F /* HistoryTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryTableViewCell.m; sourceTree = "<group>"; };
+		189D2B711A08D26C002D146F /* ChatTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatTableViewCell.h; sourceTree = "<group>"; };
+		189D2B721A08D26C002D146F /* ChatTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatTableViewCell.m; sourceTree = "<group>"; };
 		247B8FD1EC1B66D5E81F496A /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		74DBC4E0774744EC1C684A95 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		AABB98AB79227B78063B727E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -371,8 +371,8 @@
 				187786C71A04B72B00FE1502 /* Core Data */,
 				187786851A04B12100FE1502 /* ViewController.h */,
 				187786861A04B12100FE1502 /* ViewController.m */,
-				189D2B551A08B69D002D146F /* HistoryViewController.h */,
-				189D2B561A08B69D002D146F /* HistoryViewController.m */,
+				189D2B551A08B69D002D146F /* ChatViewController.h */,
+				189D2B561A08B69D002D146F /* ChatViewController.m */,
 				189D2B5C1A08BD4D002D146F /* ContactViewController.h */,
 				189D2B5D1A08BD4D002D146F /* ContactViewController.m */,
 				189D2B6A1A08CAC5002D146F /* PickupViewController.h */,
@@ -431,7 +431,7 @@
 				187786A71A04B16E00FE1502 /* LaunchScreen.xib */,
 				187786A81A04B16E00FE1502 /* Login.storyboard */,
 				187460641A07834300D7FD89 /* Main.storyboard */,
-				189D2B581A08BC1E002D146F /* History.storyboard */,
+				189D2B581A08BC1E002D146F /* Chat.storyboard */,
 				189D2B5A1A08BC28002D146F /* Contact.storyboard */,
 				189D2B661A08C967002D146F /* Pickup.storyboard */,
 				189D2B681A08C98C002D146F /* Setting.storyboard */,
@@ -606,8 +606,8 @@
 		189D2B701A08CC3B002D146F /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				189D2B711A08D26C002D146F /* HistoryTableViewCell.h */,
-				189D2B721A08D26C002D146F /* HistoryTableViewCell.m */,
+				189D2B711A08D26C002D146F /* ChatTableViewCell.h */,
+				189D2B721A08D26C002D146F /* ChatTableViewCell.m */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -717,7 +717,7 @@
 				189D2B5B1A08BC28002D146F /* Contact.storyboard in Resources */,
 				187786A91A04B16E00FE1502 /* LaunchScreen.xib in Resources */,
 				1858B07A1A048E4100393590 /* Images.xcassets in Resources */,
-				189D2B591A08BC1E002D146F /* History.storyboard in Resources */,
+				189D2B591A08BC1E002D146F /* Chat.storyboard in Resources */,
 				187460651A07834300D7FD89 /* Main.storyboard in Resources */,
 				189D2B691A08C98C002D146F /* Setting.storyboard in Resources */,
 			);
@@ -781,7 +781,7 @@
 				187786C11A04B6CE00FE1502 /* NSDate+Category.m in Sources */,
 				1877871A1A04B72B00FE1502 /* NSManagedObjectModel+MagicalRecord.m in Sources */,
 				187787091A04B72B00FE1502 /* ApplyEntity.m in Sources */,
-				189D2B731A08D26C002D146F /* HistoryTableViewCell.m in Sources */,
+				189D2B731A08D26C002D146F /* ChatTableViewCell.m in Sources */,
 				187787271A04CC1400FE1502 /* NSDictionary+Json.m in Sources */,
 				187787101A04B72B00FE1502 /* NSString+MagicalDataImport.m in Sources */,
 				1877870A1A04B72B00FE1502 /* MagicalImportFunctions.m in Sources */,
@@ -798,7 +798,7 @@
 				187786AE1A04B3C700FE1502 /* BaseTextField.m in Sources */,
 				187787151A04B72B00FE1502 /* NSManagedObject+MagicalRequests.m in Sources */,
 				189D2B5E1A08BD4D002D146F /* ContactViewController.m in Sources */,
-				189D2B571A08B69D002D146F /* HistoryViewController.m in Sources */,
+				189D2B571A08B69D002D146F /* ChatViewController.m in Sources */,
 				1877872D1A04CEFD00FE1502 /* NSString+MD5.m in Sources */,
 				1877869C1A04B12200FE1502 /* ViewController.m in Sources */,
 				187786C61A04B6CE00FE1502 /* UIViewController+HUD.m in Sources */,

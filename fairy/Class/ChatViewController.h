@@ -1,5 +1,5 @@
 //
-//  HistoryViewController.h
+//  ChatViewController.h
 //  fairy
 //
 //  Created by apple on 14/11/4.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HistoryViewController : UIViewController
+@interface ChatViewController : UIViewController
 
 @end

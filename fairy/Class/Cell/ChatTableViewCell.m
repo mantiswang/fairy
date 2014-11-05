@@ -1,14 +1,14 @@
 //
-//  HistoryTableViewCell.m
+//  ChatTableViewCell.m
 //  fairy
 //
 //  Created by apple on 14/11/4.
 //  Copyright (c) 2014年 onecat. All rights reserved.
 //
 
-#import "HistoryTableViewCell.h"
+#import "ChatTableViewCell.h"
 
-@implementation HistoryTableViewCell
+@implementation ChatTableViewCell
 
 - (void)awakeFromNib {
     // Initialization code

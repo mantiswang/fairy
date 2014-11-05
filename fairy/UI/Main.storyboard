@@ -35,7 +35,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="string" keyPath="storyboardName" value="History"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="storyboardName" value="Chat"/>
                     </userDefinedRuntimeAttributes>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OCi-fz-i8a" userLabel="First Responder" sceneMemberID="firstResponder"/>
